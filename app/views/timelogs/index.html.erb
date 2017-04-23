@@ -1,0 +1,65 @@
+    <% if ((!cookies[:username]) ||  (cookies[:role] != "admin")) %>
+        <h3>You must be logged in and be an admin to view timelogs <%=link_to "Main page to log-in",root_path %></h3>
+    <% else %>
+
+    <div class="container theme-showcase">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="main-header center jumbotron">
+        <h2>Timelogs</h2>
+      </div>
+      <div class="page-header">
+      </div>
+      
+      <nav aria-label="...">
+        <ul class="pager">
+         <li class="previous"><a href=<%= "/users/#{cookies[:id]}" %>><span aria-hidden="true">&larr;</span> User Page</a></li>
+       </ul>
+      </nav>
+
+
+      <table class="table table-striped" id="logs-table">
+            <thead><tr >
+              <th>Date/Time</th>
+              <th>User</th>
+              <th>Project</th>
+              <th>Amount of Time</th>
+              <th>Note</th>
+            </tr></thead>
+            <tbody id="logs-table-body">
+
+            </tbody>
+          </table>
+    </div> <!-- /container -->
+      <script>
+           getTimelogContentJSON();
+      </script>
+
+
+    <div id="showNote" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Note</h4>
+        </div>
+         <div class="modal-body">
+              <%= form_for :timelog, method: "patch", html: {id: "edit_note_form" } do |f|  %>
+              <p>  
+
+                <%= f.text_field :note, "size" =>40, "id" => "note-field", :value =>" " %> <br/>
+              </p>
+              <p>
+                <%= f.submit "Change" %>
+              </p>
+              <% end %>
+      </div>
+        <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <% end %>

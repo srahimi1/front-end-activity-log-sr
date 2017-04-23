@@ -1,0 +1,215 @@
+<% if !cookies[:username]%>
+   <h3>You must be logged in to view this page <%=link_to "Main page to log-in",root_path %></h3>
+<% else %>
+
+<div class="container">
+	<div class="page-header page-header-bolder">
+	 <div class="row">
+		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<p class="user-names">Name: <%= @user.first_name  %> <%= @user.last_name  %></p>
+		</div>
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 align-right-text">
+			<p>
+        <%= form_for :user, url: {action: "logout", :controller => "users"} do |f|%>
+        <%= f.button "Logout", :type => "submit", :class => "btn btn-success" %>
+			  <% end %>
+      </p>
+		</div>
+	 </div><!-- class="row"-->
+    </div><!-- class="page-header page-header-bolder" -->
+    <div class="row">
+		  <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    		<h4>Username: <%= @user.username %></h4>
+    	</div>
+    	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 align-right-text">
+			   <p>
+            <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#changePassword">Change Password</button>
+			   </p>
+		  </div>
+	 </div><!-- class="row"-->
+   <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          <% if params[:msg].to_s == "Password updated successfully" %>
+            <div class="alert alert-success" role="alert">Password updated successfully<a href="javascript:void(0)" onclick="closeThis(this)" style="float: right">X</a></div>
+          <% elsif !!params[:msg] %>
+            <div class="alert alert-danger" role="alert"><%= params[:msg].to_s %></div>
+          <% end %>
+        </p> 
+      </div>
+   </div><!-- class="row"-->
+
+   <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          <h4>Role: <%= @user.role %></h4>
+        </p> 
+      </div>
+   </div><!-- class="row"-->
+
+
+   <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <% if cookies[:role] == "admin" %>
+          <p><a href="/timelogs">View Timelogs</a></p>
+        <% end %>
+        <p>
+          My Created Projects: (<a href="/projects">View all projects</a>)
+        </p>
+      </div>
+    </div><!-- class="row"-->
+
+
+   <div class="row">
+      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+         <p>
+            <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#createProject">Create Project</button>
+         </p>
+      </div>
+    </div>
+
+      <table class="table table-striped">
+        <% if ((!!@projects) && (@projects.length > 0)) %>
+          <thead><tr>
+            <th>No.</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr></thead>
+          <tbody>
+            <% @projects.each_with_index do |project, i| %>
+              <tr>
+                <td><%= i+1 %></td>
+                <td><%= link_to project.title, project %></td>
+                <td><a href="" data-toggle="modal" data-target="#showDescription" onclick="addDescription(this)"><%= project.description[0,30] %>...</a></td>
+                <td class="modal-data-desc">
+                <%= project.description %></td>
+                <td><%= project.status %></td>
+              </tr>
+            <% end %>  
+          </tbody>
+        <% end %>
+      </table>
+
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>
+          My Collaborations:
+        </p>
+      </div>
+    </div><!-- class="row"-->
+
+
+      <table class="table table-striped">
+        <% if ((!!@collaborations) && (@collaborations.length > 0)) %>
+          <thead><tr>
+            <th>No.</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+          </tr></thead>
+          <tbody>
+            <% @collaborations.each_with_index do |collaboration, i| %>
+              <tr>
+                <td><%= i+1 %></td>
+                <td><%= link_to collaboration.title, collaboration %></td>
+                <td><a href="" data-toggle="modal" data-target="#showDescription" onclick="addDescription(this)"><%= collaboration.description[0,30] %>...</a></td>
+                <td class="modal-data-desc">
+                <%= collaboration.description %></td>
+                <td><%= collaboration.status %></td>
+              </tr>
+            <% end %>  
+          </tbody>
+        <% end %>
+      </table>
+
+
+
+</div> <!-- class="container"-->
+
+
+<div id="changePassword" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Change Password</h4>
+      </div>
+      <div class="modal-body">
+              <%= form_for :user, method: "patch", html: {id: "change_password_form" } do |f|  %>
+              <p>  
+                <%= f.label :password, "New password" %> <br/>
+                <%= f.password_field :password, "size" =>40, "id" => "user_new_password" %> <br/>
+              </p>
+              <p>  
+                <%= f.label :password, "Re-enter password" %> <br/>
+                <%= f.password_field :password_confirmation, "size" =>40, "id" => "password_confirm" %> <br/>
+              </p>
+              <div id="change_password_error_message" class="alert alert-danger" role="alert"></div>
+              <p class="align-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <%= f.button "Change", :type => "button", "class" => "btn btn-primary", "onclick" => "checkPasswordMatch()" %>
+              </p>
+              <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="showDescription" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Description</h4>
+      </div>
+      <div class="modal-body">
+        <p id="showDescriptionP"></p>        
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="createProject" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Create Project</h4>
+      </div>
+      <div class="modal-body">
+              <%= form_for :project, url: projects_path do |f|  %>
+              <p>  
+                <%= f.label :title, "Title" %> <br/>
+                <%= f.text_field :title, "size" =>40 %> <br/>
+              </p>
+              <p>  
+                <%= f.label :description, "Description" %> <br/>
+                <%= f.text_field :description, "size" =>40 %> <br/>
+              </p>
+              <p class="align-right"> 
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>&nbsp&nbsp<%= f.submit "Create","class" => "btn btn-primary" %>
+              </p>
+              <% end %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<% end %>

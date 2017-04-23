@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .center {
+ 	margin: auto;
+ 	text-align: center;
+ }
+
+ .main-header {
+ 	width: 100%;
+ 	padding: 10px;
+ }
+
+ .align-right {
+ 	width: 100%;
+ 	text-align: right;
+ }
+
+ .align-right-text {
+ 	text-align: right;
+ }
+
+ .error-message {
+ 	color: red;
+ }
+
+ .user-names {
+ 	font-size: 24px;
+ }
+
+ .page-header-bolder {
+ 	border-bottom: 2px solid #ccc;
+ }
+
+ .success-msg {
+ 	text-align: left;
+ 	color: #11ff66;
+ 	font-size: 18px;
+ }
+
+ .fail-msg {
+ 	text-align: left;
+ 	color: #ff6611;
+ 	font-size: 18px;
+ }
+
+#enroll_error_message, #change_password_error_message {
+	display: none;
+}
+
+.modal-data-desc {
+	display: none;
+}
+
+#logs-table {
+	display: none;
+}

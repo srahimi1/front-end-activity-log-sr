@@ -1,0 +1,83 @@
+      <% if !cookies[:username]%>
+        <h3>You must be logged in to view projects <%=link_to "Main page to log-in",root_path %></h3>
+      <% else %>
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+
+      <div class="main-header center jumbotron">
+        <h2>Projects</h2>
+      </div>
+      <div class="page-header">
+      </div>
+      <nav aria-label="...">
+      <ul class="pager">
+        <li class="previous"><a href=<%= "/users/#{cookies[:id]}" %>><span aria-hidden="true">&larr;</span> User Page</a></li>
+    </ul>
+    </nav>
+
+
+          <table class="table table-striped">
+            <% if ((!!@projects) && (@projects.length > 0)) %>
+            <thead><tr>
+              <th>No.</th>
+              <th>Title</th>
+              <th>Created By</th>
+              <th>Collaborators</th>
+              <th>Status</th>
+              <% if cookies[:role] == "admin" %>
+              <th>Delete</th>
+              <% end %>
+            </tr></thead>
+            <tbody>
+              <% @projects.each_with_index do |project, i| %>
+                <tr>
+                  <td><%= i+1 %></td>
+                  <td><a href="" data-toggle="modal" data-target="#showDescription" onclick="addDescription(this)"><%= project.title %></a></td>
+                  <td class="modal-data-desc">
+                  <%= project.description %></td>
+                  <td><%= project.user.username %></td>
+                  <td> <% project.collaborations.each do |collaboration| %>
+                  <%= collaboration.user.username %><br/>
+                    <% end %>
+                  </td>
+                  <td><%= project.status %></td>
+                  <% if cookies[:role] == "admin" %>
+                    <td>
+                    <%= form_for project, method: "delete" do |f|  %>
+                      <%= f.submit "Delete", class: "btn btn-danger" %>
+                    <% end %>
+                    </td>
+                  <% end %>
+
+                </tr>
+              <% end %>  
+            </tbody>
+          <% end %>
+          </table>
+
+
+    </div> <!-- /container -->
+
+
+
+
+    <div id="showDescription" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Description</h4>
+      </div>
+      <div class="modal-body">
+        <p id="showDescriptionP"></p>        
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>
