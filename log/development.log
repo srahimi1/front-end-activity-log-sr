@@ -1,0 +1,718 @@
+Started GET "/" for ::1 at 2017-07-17 08:57:16 -0400
+  
+PG::ConnectionBad (could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.0ms)
+  Rendering d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.0ms)
+  Rendering d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered d:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25080.8ms)
+  [1m[35m (248.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (181.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1190774948786432205);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170412163335)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (254.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "title" character varying, "user_name" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170412163335"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20170412163649)
+  [1m[35m (28.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (239.4ms)[0m  [1m[35mCREATE TABLE "projects" ("id" serial primary key, "title" character varying, "description" text, "status" character varying, "created_by" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170412163649"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCollaborations (20170412163855)
+  [1m[35m (11.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (239.4ms)[0m  [1m[35mCREATE TABLE "collaborations" ("id" serial primary key, "project_id" integer, "collaborator_id" integer, "role" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (58.1ms)[0m  [1m[35mCREATE  INDEX  "index_collaborations_on_project_id" ON "collaborations"  ("project_id")[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170412163855"]]
+  [1m[35m (3802.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTimelogs (20170412165204)
+  [1m[35m (9.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (290.4ms)[0m  [1m[35mCREATE TABLE "timelogs" ("id" serial primary key, "user_id" integer, "project_id" integer, "datetime" timestamp, "note" text, "total_time" time, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (64.1ms)[0m  [1m[35mCREATE  INDEX  "index_timelogs_on_user_id" ON "timelogs"  ("user_id")[0m
+  [1m[35m (64.1ms)[0m  [1m[35mCREATE  INDEX  "index_timelogs_on_project_id" ON "timelogs"  ("project_id")[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170412165204"]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to FixUsersTableColumnName (20170414113220)
+  [1m[35m (10.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" RENAME COLUMN "user_name" TO "username"[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170414113220"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeDatetimeColumnNameToDate (20170418020321)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "timelogs" RENAME COLUMN "datetime" TO "log_date"[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170418020321"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnRoleToUsersModel (20170419173419)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "users" ADD "role" character varying[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170419173419"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeFieldTotalTime (20170419202223)
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (408.6ms)[0m  [1m[35mALTER TABLE "timelogs" ALTER COLUMN "total_time" TYPE character varying[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170419202223"]]
+  [1m[35m (133.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-07-17 13:20:34 UTC], ["updated_at", 2017-07-17 13:20:34 UTC]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(1190774948786432205)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2017-07-17 09:23:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (36.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (553.8ms)
+Completed 200 OK in 32012ms (Views: 31661.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-07-17 09:25:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWGC6E95Za44Rh/CBUlf1TQ1dy04wS5Leu/Oi43mGZO/6AqMKKKFDP5R06S0P0IXOUUZlCiJPRYGdUGlNrW8SA==", "user"=>{"username"=>"aaaa", "first_name"=>"a", "last_name"=>"a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"employee"}}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (5.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+  [1m[35mSQL (10.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "password", "created_at", "updated_at", "role") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "a"], ["last_name", "a"], ["username", "aaaa"], ["password", "aaaa"], ["created_at", 2017-07-17 13:25:48 UTC], ["updated_at", 2017-07-17 13:25:48 UTC], ["role", "employee"]]
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 428ms (ActiveRecord: 56.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:25:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (95.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (5.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (6.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (182.3ms)
+Completed 200 OK in 1963ms (Views: 1024.7ms | ActiveRecord: 363.5ms)
+
+
+Started PATCH "/users/1" for ::1 at 2017-07-17 09:26:28 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VcUC7H3iPkQokGCUPt1lkqcGtheLyA1MXkWPaAkhvfG7TIqIGjne5u6HrPKPq3hQqnbYrpuAHhEi3wBGsnIYKg==", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["username", "aaaa"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "password" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["password", "bbbb"], ["updated_at", 2017-07-17 13:26:28 UTC], ["id", 1]]
+  [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1?msg=Password+updated+successfully
+Completed 302 Found in 96ms (ActiveRecord: 63.1ms)
+
+
+Started GET "/users/1?msg=Password+updated+successfully" for ::1 at 2017-07-17 09:26:29 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"msg"=>"Password updated successfully", "id"=>"1"}
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (47.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (65.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (133.2ms)
+Completed 200 OK in 1162ms (Views: 924.4ms | ActiveRecord: 119.2ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:26:34 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (4.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 1053ms (Views: 878.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:26:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (3.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (5.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 988ms (Views: 867.9ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/projects" for ::1 at 2017-07-17 09:27:02 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yssp8u27SOsHZKIkz2MBBonSWPXwVCZPojTw4Z9Ouy9LpXBk84IQBTO/07RToSv0kgfySg0edqofLTbtf05HiQ==", "project"=>{"title"=>"new project", "description"=>"create a lot of projects"}, "commit"=>"Create"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "status", "created_by", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "new project"], ["description", "create a lot of projects"], ["status", "incomplete"], ["created_by", 1], ["created_at", 2017-07-17 13:27:03 UTC], ["updated_at", 2017-07-17 13:27:03 UTC]]
+  [1m[35m (54.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 270ms (ActiveRecord: 65.1ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:27:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (83.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (6.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (115.2ms)
+Completed 200 OK in 1138ms (Views: 928.5ms | ActiveRecord: 90.1ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-17 09:27:14 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1061ms (Views: 916.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/timelogs" for ::1 at 2017-07-17 09:27:25 -0400
+Processing by TimelogsController#create as */*
+  Parameters: {"user_id"=>"1", "project_id"=>"1"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (3971.8ms)[0m  [1m[32mINSERT INTO "timelogs" ("user_id", "project_id", "log_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 1], ["project_id", 1], ["log_date", 2017-07-17 13:27:25 UTC], ["created_at", 2017-07-17 13:27:25 UTC], ["updated_at", 2017-07-17 13:27:25 UTC]]
+  [1m[35m (107.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4274ms (Views: 44.2ms | ActiveRecord: 4131.1ms)
+
+
+Started PATCH "/api/timelogs/1" for ::1 at 2017-07-17 09:27:36 -0400
+Processing by TimelogsController#update as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mTimelog Load (148.2ms)[0m  [1m[34mSELECT  "timelogs".* FROM "timelogs" WHERE "timelogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "timelogs" SET "total_time" = $1, "updated_at" = $2 WHERE "timelogs"."id" = $3[0m  [["total_time", "00:00:11"], ["updated_at", 2017-07-17 13:27:37 UTC], ["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering text template
+  Rendered text template (1.0ms)
+Completed 200 OK in 184ms (Views: 1.7ms | ActiveRecord: 152.2ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:27:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 1408ms (Views: 1294.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-17 09:27:43 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 980ms (Views: 869.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:27:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1008ms (Views: 892.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:28:02 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (4.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (137.2ms)
+Completed 200 OK in 1161ms (Views: 1047.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:28:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1004ms (Views: 878.9ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/logout" for ::1 at 2017-07-17 09:28:08 -0400
+Processing by UsersController#logout as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/e9yusno+r5KIc+MBSbv5k25plsZrMExDp6inJRw6u13lDLHH7AKrbvPnzMABfKLVU+K2jlxiNQjaPgouhNy+g==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-17 09:28:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 967ms (Views: 859.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2017-07-17 09:28:18 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AtiMA2Je86fEgSlVexYc1gkxvYdUPusS6AM7MIGUuW7sUQRnBYUTBQKW5TPKYAEUBEHTPkR2+E+UmbQeOscctQ==", "user"=>{"username"=>"aaaa", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/?msg=Login+info+incorrect
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/?msg=Login+info+incorrect" for ::1 at 2017-07-17 09:28:18 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"msg"=>"Login info incorrect"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1021ms (Views: 909.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2017-07-17 09:28:26 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vm4PdJLq5DWvsT9nhTWzVCQbVW81v2jqht1hdWXlR/G454cQ9TEEl2mm8wE0Q66WKWs71iX3e7f6R+5b3rbiKg==", "user"=>{"username"=>"aaaa", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:28:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1051ms (Views: 930.9ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/logout" for ::1 at 2017-07-17 09:28:32 -0400
+Processing by UsersController#logout as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+VWaNTnD1vfBYX9l5DjotkWaRvTOhGioiwYYrUao4dQX3BJRXhg2VQd2swNVTvV0SOooTd7Me/X3nJeD/ftEDw==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-17 09:28:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1005ms (Views: 893.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-07-17 09:28:49 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5P1QM54iJp4Y7fsz6O2s0Je9ak7b82zeIavzv16xJmsKdNhX+fnGPN76N1VZm7ESms0E98u7f4NdMXyR5eKDsA==", "user"=>{"username"=>"aaaa", "first_name"=>"a", "last_name"=>"a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/?msg=User+not+saved%2C+duplicate+username%2C+please+try+again
+Completed 302 Found in 20ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/?msg=User+not+saved%2C+duplicate+username%2C+please+try+again" for ::1 at 2017-07-17 09:28:50 -0400
+Processing by WelcomeController#index as HTML
+  Parameters: {"msg"=>"User not saved, duplicate username, please try again"}
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1015ms (Views: 904.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2017-07-17 09:29:07 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mvp2Nc9YFXN8GgMU5/tz4Zyrz3bMzdgW34Eu3qSzslbcc/5RqIP10boNz3JWjW4jkduhz9yFy0ujG6HwH+AXjQ==", "user"=>{"username"=>"bbbb", "first_name"=>"a", "last_name"=>"a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (2.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bbbb"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "password", "created_at", "updated_at", "role") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "a"], ["last_name", "a"], ["username", "bbbb"], ["password", "aaaa"], ["created_at", 2017-07-17 13:29:07 UTC], ["updated_at", 2017-07-17 13:29:07 UTC], ["role", "admin"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 26ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:29:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1040ms (Views: 920.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/timelogs" for ::1 at 2017-07-17 09:29:12 -0400
+Processing by TimelogsController#index as HTML
+  Rendering timelogs/index.html.erb within layouts/application
+  Rendered timelogs/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1042ms (Views: 889.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/timelogs.json" for ::1 at 2017-07-17 09:29:14 -0400
+Processing by TimelogsController#index as JSON
+  Rendering timelogs/index.json.jbuilder
+  [1m[36mTimelog Load (1.0ms)[0m  [1m[34mSELECT "timelogs".* FROM "timelogs"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered timelogs/index.json.jbuilder (148.2ms)
+Completed 200 OK in 703ms (Views: 574.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:29:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1016ms (Views: 900.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:29:24 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (1.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 1000ms (Views: 889.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:36:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1057ms (Views: 941.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/logout" for ::1 at 2017-07-17 09:36:40 -0400
+Processing by UsersController#logout as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VcVIh7ksc5u/xGlQh/SogUSf6YBg6RA/Norck1muiNLfvgj6b3SDiE4qOe+C17XsXGnFAUA0WdobfIYnd80QxQ==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-17 09:36:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 999ms (Views: 890.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2017-07-17 09:39:12 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GlKveIrwb4qgK3yzjjjpGaUEwkGZi+OhHvv1EfiNnoX02ycc7SuPKGY8sNU/TvTbqHSs+InD8PxiYXo/Q947Xg==", "user"=>{"username"=>"aaaa", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:39:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1325ms (Views: 1191.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/projects/1" for ::1 at 2017-07-17 09:39:20 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+  Rendered projects/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1015ms (Views: 902.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:50:14 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/projects" for ::1 at 2017-07-17 09:50:17 -0400
+  Rendering users/show.html.erb within layouts/application
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (115.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (109.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (254.4ms)
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (1.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 3614ms (Views: 3250.3ms | ActiveRecord: 225.3ms)
+
+
+Completed 200 OK in 1576ms (Views: 1439.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:50:22 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1012ms (Views: 897.6ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users/logout" for ::1 at 2017-07-17 09:50:25 -0400
+Processing by UsersController#logout as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TdqxARnJcBUDV0/3XNfzcWU+Vi1u3PTfIYbGdPrQx23HofF8z5GABvK5H0hZ9O4cfch6rE4BvToMcJzA1LNfeg==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-17 09:50:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1029ms (Views: 916.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2017-07-17 09:50:41 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LUfQ76dBDUOVWd5dxSpK8gQNExi3EozpgyMQxQAPgIfDzliLwJrt4VNOEjt0XFcwCX19oadan7T/uZ/ru1wlXA==", "user"=>{"username"=>"bbbb", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bbbb"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:50:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1056ms (Views: 934.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:50:47 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (0.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1020ms (Views: 908.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:50:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1020ms (Views: 893.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/timelogs" for ::1 at 2017-07-17 09:50:54 -0400
+Processing by TimelogsController#index as HTML
+  Rendering timelogs/index.html.erb within layouts/application
+  Rendered timelogs/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1057ms (Views: 949.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/timelogs.json" for ::1 at 2017-07-17 09:50:55 -0400
+Processing by TimelogsController#index as JSON
+  Rendering timelogs/index.json.jbuilder
+  [1m[36mTimelog Load (120.2ms)[0m  [1m[34mSELECT "timelogs".* FROM "timelogs"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered timelogs/index.json.jbuilder (137.2ms)
+Completed 200 OK in 683ms (Views: 446.0ms | ActiveRecord: 121.2ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:50:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1067ms (Views: 944.6ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/projects" for ::1 at 2017-07-17 09:51:11 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4bj6f1Gc9+jt8nBxwTgHDRiykZG7BoVUhOheoT/IYUfI1qPpT6WvBtkpAeFd+i3/A2c7LkZM1bE58Zit38id4Q==", "project"=>{"title"=>"abc", "description"=>"more"}, "commit"=>"Create"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "status", "created_by", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "abc"], ["description", "more"], ["status", "incomplete"], ["created_by", 2], ["created_at", 2017-07-17 13:51:11 UTC], ["updated_at", 2017-07-17 13:51:11 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 29ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:51:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 1053ms (Views: 930.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:51:14 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (0.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (0.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 2]]
+  Rendered projects/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 1066ms (Views: 953.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/2" for ::1 at 2017-07-17 09:51:21 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 2]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 2]]
+  Rendered users/show.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1045ms (Views: 928.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/logout" for ::1 at 2017-07-17 09:51:25 -0400
+Processing by UsersController#logout as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rvLjm0n64SBQ6K/zteTkNIHRtkzOQrsXDGNsgCJMsZwkiaPmn6IRM6EG/0ywx/lZmSeaze6f8vIhlTY0DC8piw==", "button"=>""}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-07-17 09:51:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1010ms (Views: 898.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/login" for ::1 at 2017-07-17 09:51:42 -0400
+Processing by UsersController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7F6LFlTv6cW5TiR3AFkX68Uy3jOMQ2ErrYHx0xsmGqAC1wNyMzQJZ39Z6BGxLwopyEKwipwLcnbRG379oHW/ew==", "user"=>{"username"=>"aaaa", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "aaaa"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:51:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1450ms (Views: 1328.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/projects" for ::1 at 2017-07-17 09:51:49 -0400
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (1.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCollaboration Load (1.0ms)[0m  [1m[34mSELECT "collaborations".* FROM "collaborations" WHERE "collaborations"."project_id" = $1[0m  [["project_id", 2]]
+  Rendered projects/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 1057ms (Views: 942.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1" for ::1 at 2017-07-17 09:52:08 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."created_by" = $1[0m  [["created_by", 1]]
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" INNER JOIN "collaborations" ON "collaborations"."project_id" = "projects"."id" WHERE "collaborations"."collaborator_id" = $1[0m  [["collaborator_id", 1]]
+  Rendered users/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 1061ms (Views: 942.3ms | ActiveRecord: 2.0ms)
+
+
