@@ -1,6 +1,9 @@
 # Activity Log simulator
 
-The following is an example an activity log where a user's front-end activity is registered in a user log via a custome JSON API built using JBuilder to create the response, and a rails scaffold to display the JSON response, although any front end JavaScript technology (Angular, React) could be used to create the view for the JSON response.
+The following is an example of an activity log where a user's front-end activity, in this case creating and editing a mock project, is stored in a log and the data for the log view is accessed through a custom JSON API built using JBuilder.  A generic rails view is used to display the JSON response, although any front end JavaScript technology (Angular, React) or native mobile based app could be used to create the view for the JSON response.
+
+
+The descriptions of my workflow below follow this format:
 
 #. (length of time it takes me) Description
 
