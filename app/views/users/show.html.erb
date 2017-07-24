@@ -141,11 +141,11 @@
               <%= form_for :user, method: "patch", html: {id: "change_password_form" } do |f|  %>
               <p>  
                 <%= f.label :password, "New password" %> <br/>
-                <%= f.password_field :password, "size" =>40, "id" => "user_new_password" %> <br/>
+                <%= f.password_field :password, "id" => "user_new_password" %> <br/>
               </p>
               <p>  
                 <%= f.label :password, "Re-enter password" %> <br/>
-                <%= f.password_field :password_confirmation, "size" =>40, "id" => "password_confirm" %> <br/>
+                <%= f.password_field :password_confirmation, "id" => "password_confirm" %> <br/>
               </p>
               <div id="change_password_error_message" class="alert alert-danger" role="alert"></div>
               <p class="align-right">
@@ -194,11 +194,11 @@
               <%= form_for :project, url: projects_path do |f|  %>
               <p>  
                 <%= f.label :title, "Title" %> <br/>
-                <%= f.text_field :title, "size" =>40 %> <br/>
+                <%= f.text_field :title %> <br/>
               </p>
               <p>  
                 <%= f.label :description, "Description" %> <br/>
-                <%= f.text_field :description, "size" =>40 %> <br/>
+                <%= f.text_field :description %> <br/>
               </p>
               <p class="align-right"> 
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>&nbsp&nbsp<%= f.submit "Create","class" => "btn btn-primary" %>

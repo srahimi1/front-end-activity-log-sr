@@ -48,7 +48,7 @@
               <%= form_for :timelog, method: "patch", html: {id: "edit_note_form" } do |f|  %>
               <p>  
 
-                <%= f.text_field :note, "size" =>40, "id" => "note-field", :value =>" " %> <br/>
+                <%= f.text_field :note, "id" => "note-field", :value =>" " %> <br/>
               </p>
               <p>
                 <%= f.submit "Change" %>
