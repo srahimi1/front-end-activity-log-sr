@@ -35,13 +35,13 @@
 	 </div><!-- class="row"-->
 
   <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <p class="center"><button type="button" class="btn btn-info btn-lg center" onclick="startActivity(<%= User.find_by(:username => cookies[:username]).id %>,<%= @project.id %>)">Start Activity</button>     - | -     <button id="stop-activity-btn" type="button" class="btn btn-warning btn-lg center" onclick="stopActivity()">Stop Activity</button></p>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="activity-status">
       </div>
    </div><!-- class="row"-->
 
   <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="activity-status">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p class="center"><button type="button" class="btn btn-info btn-lg" onclick="startActivity(<%= User.find_by(:username => cookies[:username]).id %>,<%= @project.id %>)">Start Activity</button>     - | -     <button id="stop-activity-btn" type="button" class="btn btn-warning btn-lg" onclick="stopActivity()">Stop Activity</button></p>
       </div>
    </div><!-- class="row"-->
 

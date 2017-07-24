@@ -16,14 +16,12 @@ class TimelogsController < ApplicationController
 
 	def update
 		@timelog = Timelog.find(params[:id])
-		puts @timelog.inspect
 		if !!params[:timelog]
 			if @timelog.update(note: params[:timelog][:note])
 				redirect_to timelogs_path
 			else
 				redirect_to timelogs_path
 			end
-
 		else
 			time = 	Time.at(Time.now.utc - @timelog.log_date.utc).utc.strftime("%H:%M:%S")
 			if @timelog.update(total_time: time)
