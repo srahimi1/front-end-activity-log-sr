@@ -5,15 +5,15 @@ The following is an example of an activity log where the length of time a user s
 In this app, you can assume two roles, employee or admin.  In either case you must sign up using the sign-up sheet on the right of the screen.  Employee role is default. To enroll as an admin, click the "Role: admin" checkbox. Both usernames and passwords must be at least four characters long for both roles.
 
 As an employee, you can:
-1. create a new project
-2. view the name and description of the project (which you entered during project creation)
-3. perform an "activity" on the project, simulated in this app by pressing the "start activity" and "stop activity" buttons on the users project page.  It is these activities that are logged, and the duration you spent between pressing the "start activity" button and the "stop activity" button is recorded.  This is meant to simulate the time an employee spends performing an actual task in a real-world situation.
-4. view all projects of all users
-4. change your password
+1. Create a new project
+2. View the name and description of the project (which you entered during project creation)
+3. Perform an "activity" on the project, simulated in this app by pressing the "start activity" and "stop activity" buttons on the users project page.  It is these activities that are logged, and the duration you spent between pressing the "start activity" button and the "stop activity" button is recorded.  This is meant to simulate the time an employee spends performing an actual task in a real-world situation.
+4. View all projects of all users
+4. Change your password
 
 As an admin, you can do everything an employee can, plus:
-#### 1. view the timelogs of the activities (only as an admin can you view timelogs), by clicking the "view timelongs" link on the admin page
-2. delete projects
+### 1. View the timelogs of the activities (only as an admin can you view timelogs), by clicking the "view timelongs" link on the admin page
+2. Delete projects
 
 
 
