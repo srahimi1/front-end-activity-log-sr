@@ -12,7 +12,7 @@ As an employee, you can:
 4. Change your password
 
 As an admin, you can do everything an employee can, plus:
-### 1. View the timelogs of the activities (only as an admin can you view timelogs), by clicking the "view timelongs" link on the admin page
+1. **View the timelogs of the activities (_only as an admin can you view timelogs_)**, by clicking the "view timelongs" link on the admin page
 2. Delete projects
 
 
